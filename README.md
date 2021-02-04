@@ -2,7 +2,7 @@
 An easy way to conduct filter-pruning for Convolutional layers and fully connected layers
 
 # Models
-**Model folder** contains model architectures.
+**Model folder** contains model architectures.  
 :alien:*At this moment, only vgg16-cifar10 architecture is included.*
 
 **Original VGG16** model takes an input image of size **224x244**, and gives outpus of **1000 classes**.
