@@ -1,5 +1,6 @@
 # easy-filter-pruning
 An easy way to conduct filter-pruning for convolutional layers and fully connected layers!
+
 You can use it to determine the sensitivity of individual convolutional & fully connected layer to pruning.  
 
 # co-researcher
