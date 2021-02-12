@@ -42,4 +42,3 @@ def pruning_method_conv(model, layer_to_prune, pruning_amount, method):
         return model_pruned
 
 
-
