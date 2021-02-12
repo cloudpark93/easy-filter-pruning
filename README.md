@@ -1,6 +1,38 @@
 # easy-filter-pruning
 An easy way to conduct filter-pruning for Convolutional layers and fully connected layers
 
+# co-researcher
+Please visit my **co-researcher's** github as well!  
+https://github.com/jinsoo9595
+
+# main_training&pruning_sensitivity
+_Please note that **batch_size** and **learning_rate** highly influence the performance of the trained model._
+
+You can fine-tune the **batch_size, learning_rate,** and **epochs** for training.  
+Different values for hyperparatmeters return different performances of models.
+
+The table below shows the history of training an initial model for my case.
+
+|   Model    | Dataset     | Training epochs     | Validation accuracy     |
+| :------------- | :----------: | -----------: | -----------: |
+|  VGG16 | Cifar10   | 50    | 85%    |
+|  VGG16 | Cifar10   | 100   | 84%    |
+|  VGG16 | Cifar10   | 150    | 85%    |
+|  VGG16 | Cifar10   | 200   | 89%    |
+|  VGG16 | Cifar10   | 250    | 90%    |
+|  VGG16 | Cifar10   | 300   | 90%    |
+|  VGG16 | Cifar10   | 350    | 91%    |
+|  VGG16 | Cifar10   | 400   | 91%    |
+|  VGG16 | Cifar10   | 450    | 93%    |
+
+
+
+This script enables you to prune each convolutional layer by pre-defined value.  
+You can use this to determine the sensitivity of individual convolutional layer to pruning.  
+  * _We are going to upload the script for pruning fully connected layer soon._
+  * _The pruning fc layer function is already implemented in the current script though._
+
+
 # Models
 **Model folder** contains model architectures.  
 :alien:*At this moment, only vgg16-cifar10 architecture is included.*
@@ -23,3 +55,15 @@ If you do not want to use the mean&std standardizaton, you can just simply comme
 You can also simply uncommnet the below lines to normalize the data to [0, 1] range.  
 *# x_train = x_train.astype('float32') / 255.* :point_right: *x_train = x_train.astype('float32') / 255.*  
 *# x_test = x_test.astype('float32') / 255.* :point_right: *x_test = x_test.astype('float32') / 255.*
+
+## 2. Pruning job
+Our code utilises **keras-surgeon** package by **BenWhetton**.  
+Please refer to his github link for details.  
+https://github.com/BenWhetton/keras-surgeon  
+
+### 2.1 Pruning convolutional layer
+Currently, **L1 norm** is used to determine the importance of the filters.
+
+### 2.2 Pruning fully connected layer
+Currently, **L1 norm** is used to determine the importance of the filters.
+
