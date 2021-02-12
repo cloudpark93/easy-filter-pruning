@@ -41,4 +41,3 @@ def pruning_method_fc(model, layer_to_prune, pruning_amount, method):
 
         return model_pruned
 
-
