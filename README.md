@@ -5,7 +5,7 @@ An easy way to conduct filter-pruning for Convolutional layers and fully connect
 Please visit my **co-researcher's** github as well!  
 https://github.com/jinsoo9595
 
-# main_training&pruning_sensitivity
+# main_training&pruning_sensitivity.py
 _Please note that **batch_size** and **learning_rate** highly influence the performance of the trained model._
 
 You can fine-tune the **batch_size, learning_rate,** and **epochs** for training.  
