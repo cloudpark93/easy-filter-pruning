@@ -8,7 +8,7 @@ Please visit my **co-researcher's** github as well!
 https://github.com/jinsoo9595
 
 # training_initial_model.py
-This script is for training an initial model and log the trianing history in csv format and graph.
+This script is for training an initial model and log the training history in csv files and graph images.
 
 _Please note that **batch_size** and **learning_rate** highly influence the performance of the trained model._
 
