@@ -42,6 +42,8 @@ You can use the graphical information to determine the sensitivity of individual
 **Model folder** contains model architectures.  
 :alien:*At this moment, only vgg16-cifar10 architecture is included.*
 
+For [**Resnet and Geometric median pruning method**](https://github.com/jinsoo9595/interesting-filter-pruning), please take a look at my co-researcher's github!
+
 **Original VGG16** model takes an input image of size **224x244**, and gives outpus of **1000 classes**.
 
 **VGG16-cifar10** model takes an input image of size **32x32**, and gives outputs of **10 classes** (depends on what dataset you used).
@@ -49,8 +51,6 @@ You can use the graphical information to determine the sensitivity of individual
 ![vgg16-cifar10 model image](https://user-images.githubusercontent.com/78515689/106845452-4c1ab380-66ee-11eb-970b-e2fdc9b620c2.png)
 
 
-
-For [**Resnet and Geometric median pruning method**](https://github.com/jinsoo9595/interesting-filter-pruning), please take a look at my co-researcher's github!  
 
 # Utils
 ## 1. Dataset
