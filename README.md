@@ -7,7 +7,7 @@ You can use it to determine the sensitivity of individual convolutional & fully 
 Please visit my **co-researcher's** github as well!  
 https://github.com/jinsoo9595
 
-# main_training&pruning_sensitivity.py
+# training_initial_model.py
 _Please note that **batch_size** and **learning_rate** highly influence the performance of the trained model._
 
 You can fine-tune the **batch_size, learning_rate,** and **epochs** for training.  
