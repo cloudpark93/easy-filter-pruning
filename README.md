@@ -46,6 +46,8 @@ You can use this to determine the sensitivity of individual convolutional layer 
 ![vgg16-cifar10 model image](https://user-images.githubusercontent.com/78515689/106845452-4c1ab380-66ee-11eb-970b-e2fdc9b620c2.png)
 
 
+For [Resnet and Geometric median pruning method](https://github.com/jinsoo9595/interesting-filter-pruning), please take a look at my co-researcher's github!  
+
 # Utils
 ## 1. Dataset
 **Cifar10** and **MNIST** datasets are currently available from the **dataset_loader** script.
