@@ -168,7 +168,8 @@ for layer in model.layers:
         layer_to_prune_original_model_conv.append(count)
         layer_to_prune_for_continuous_pruning_conv.append(count+1)
 
-pruning_index_per = 0.05
+pruning_index_per = 0.05 # 0.05 = 5% of the filters are to be pruned
+pruning_index_temp = np.ones((len(layer_to_prune_original_model_conv),)) * pruning_index_per 
 pruning_index = np.ones((len(layer_to_prune_original_model_conv),)) * pruning_index_per
 
 # For pruning job
@@ -176,8 +177,8 @@ for layer_to_prune in range(0, len(layer_to_prune_original_model_conv)):
     if os.path.isdir('test_continuous_pruning/test_continuous_pruning_layer{}'.format(layer_to_prune + 1)) == False:
         os.makedirs('test_continuous_pruning/test_continuous_pruning_layer{}'.format(layer_to_prune + 1))
 
-    pruning_index = [pruning_index[layer] if layer == layer_to_prune else 0 for layer in range(len(pruning_index))]
-    for i in range(1, 20):
+    pruning_index = [pruning_index_temp[layer] if layer == layer_to_prune else 0 for layer in range(len(pruning_index_temp))]
+    for i in range(1, int(1/pruning_index_per)):
         if i == 1:
             # load model to prune
             model_pruned = load_model('test_model_storage/vgg16_cifar10-450-0.93.h5')
