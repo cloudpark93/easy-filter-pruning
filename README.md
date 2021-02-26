@@ -29,13 +29,13 @@ The table below shows the history of training an initial model for my case.
 |  VGG16 | Cifar10   | 400   | 91%    |
 |  VGG16 | Cifar10   | 450    | 93%    |
 
-
-
-This script enables you to prune each convolutional layer by pre-defined value.  
+# pruning_conv_sensitivity.py
+This script enables you to prune each convolutional layer by a pre-defined value.
 You can use this to determine the sensitivity of individual convolutional layer to pruning.  
-  * _We are going to upload the script for pruning fully connected layer soon._
-  * _The pruning fc layer function is already implemented in the current script though._
 
+# pruning_fc_sensitivity.py
+This script enables you to prune each fully connected layer by a pre-defined value.
+You can use this to determine the sensitivity of individual fully connected layer to pruning.  
 
 # Models
 **Model folder** contains model architectures.  
