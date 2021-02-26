@@ -47,7 +47,7 @@ You can use this to determine the sensitivity of individual convolutional layer 
 
 
 
-For **[Resnet and Geometric median pruning method]**(https://github.com/jinsoo9595/interesting-filter-pruning), please take a look at my co-researcher's github!  
+For [**Resnet and Geometric median pruning method**](https://github.com/jinsoo9595/interesting-filter-pruning), please take a look at my co-researcher's github!  
 
 # Utils
 ## 1. Dataset
