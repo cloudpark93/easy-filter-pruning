@@ -37,6 +37,9 @@ You can use the graphical information to determine the sensitivity of individual
 ![CIFAR10 VGG-16 Pruning Fc Layer Accuracy L1-norm method](https://user-images.githubusercontent.com/78515689/109263586-db773a80-7846-11eb-99b9-6be5fa6a4e1f.jpg)
 
 
+# overall_pruning_wrt_sensitivity.py
+This script enables you to prune overall layers (inclusive of both Conv & Fc layers) based on the sensitivitiy analysis, by simply changing the target **pruning accuracy threshold** in the script.  
+
 
 # Models
 **Model folder** contains model architectures.  
