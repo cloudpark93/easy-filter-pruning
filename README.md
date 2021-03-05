@@ -3,8 +3,10 @@ An easy way to conduct filter-pruning for convolutional layers and fully connect
 
 You can use it to determine the sensitivity of individual convolutional & fully connected layer to pruning.  
 
+Github repository link for github page visitors: [https://github.com/cloudpark93/easy-filter-pruning](https://github.com/cloudpark93/easy-filter-pruning)
+
 # co-researcher
-Please visit my **co-researcher's** github as well!  
+Please visit my [**co-researcher's**](https://github.com/jinsoo9595) github as well!  
 https://github.com/jinsoo9595
 
 # training_initial_model.py
