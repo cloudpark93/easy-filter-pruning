@@ -1,4 +1,4 @@
-Sitemap: https://cloudpark93.github.io/easy-filter-pruning/sitemap.xml
-
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://cloudpark93.github.io/easy-filter-pruning/sitemap.xml
