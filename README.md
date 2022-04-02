@@ -7,7 +7,7 @@ Github repository link for github page visitors: [https://github.com/cloudpark93
 
 # co-researcher
 Please visit my [**co-researcher's**](https://github.com/jinsoo9595) github as well!  
-
+https://github.com/jinsoo9595
 
 # training_initial_model.py
 This script is for training an initial model and log the training history in csv files and graph images.
